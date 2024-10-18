@@ -1,0 +1,30 @@
+<div class="card custom-card shadow-lg mt-5 mx-auto">
+    <div class="card-header bg-secondary text-white text-center">
+        <h3 class="mb-0">Calculation Result</h3>
+    </div>
+    <div class="card-body">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 col-md-4 mb-3">
+                    <app-result-item label="Gross Yield" [value]="response.grossYield | currency:'BRL':'symbol':'1.4-4'"></app-result-item>
+                </div>
+                
+                <div class="col-12 col-md-4 mb-3">
+                    <app-result-item label="Tax" [value]="response.tax | percent:'1.2-2'"></app-result-item>
+                </div>
+                
+                <div class="col-12 col-md-4 mb-3">
+                    <app-result-item label="Net Yield" [value]="response.netYield | currency:'BRL':'symbol':'1.4-4'"></app-result-item>
+                </div>  
+                
+                <div class="col-12 mb-3">
+                    <app-result-item label="Final Gross Amount" [value]="response.gross | currency:'BRL':'symbol':'1.4-4'"></app-result-item>
+                </div>     
+
+                <div class="col-12 mb-3">
+                    <app-result-item label="Final Amount" [value]="response.finalValue | currency:'BRL':'symbol':'1.4-4'"></app-result-item>
+                </div>   
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="alert-container position-fixed top-0 end-0 p-3" style="z-index: 1050;">
+  <div *ngIf="success" class="alert alert-success fade show" role="alert">
+    {{ success }}
+  </div>
+  <div *ngIf="error" class="alert alert-danger fade show" role="alert">
+    {{ error }}
+  </div>
+  <div *ngFor="let warning of warnings" class="alert alert-warning fade show" role="alert">
+    {{ warning }}
+  </div>
+</div>
