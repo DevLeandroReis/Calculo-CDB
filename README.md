@@ -10,7 +10,7 @@
 - Restaure os pacotes do NuGet: "dotnet restore"
 - Execute a API: "dotnet run"
 
-A API estará disponível em http://localhost:5000.
+A API estará disponível em http://localhost:5000/swagger.
 
 ## Executando a API (Backend)
 - Navegue até o diretório de testes: "cd CDBBackend/Tests"
